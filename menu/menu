@@ -35,7 +35,7 @@ run_izin() {
   sysctl -w net.ipv6.conf.default.disable_ipv6=1 >/dev/null 2>&1
   
   # Link Permission IP VPS
-  url_izin='https://raw.githubusercontent.com/ghafoorali176/permission/main/ipmini'
+  url_izin='https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/ipmini'
 
   # Gets the current VPS IP
   ip_vps=$(curl -s ifconfig.me)
@@ -65,7 +65,7 @@ run_izin() {
       # Permission denied First Buy License Key
 clear
       echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | lolcat
-      echo -e "                 • Ghafoor Ali VPN-STORE •                 "
+      echo -e "                 • ILYASS  VPN-STORE •                 "
       echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | lolcat
       echo -e ""
       echo -e "\e[93m Name\e[32;1m   : $nama "
@@ -80,7 +80,7 @@ clear
       echo -e "${red} Your VPS Doesn't Allow It \e[32;1m "
       echo -e "${red} Contact Admin for License-Key \e[32;1m" | lolcat
       echo -e ""
-      echo -e "\e[93m Telegram\e[32;1m : https://t.me/ghafoorali"
+      echo -e "\e[93m Telegram\e[32;1m : https://t.me/IlyassExE"
       echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | lolcat
       echo -e ""
       exit 0
@@ -122,7 +122,7 @@ ISP=$(cat /root/.myisp)
 CITY=$(cat /root/.mycity)
 DATE2=$(date -R | cut -d " " -f -5)
 IPVPS=$(cat /root/.myip)
-UPDATE="https://raw.githubusercontent.com/ghafoorali176/virus/main/"
+UPDATE="https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/"
 clear
 #Download/Upload today
 dtoday="$(vnstat -i eth0 | grep "today" | awk '{print $2" "substr ($3, 1, 1)}')"
@@ -141,7 +141,7 @@ g="\033[1;92m"
 w="\033[1;36m"
 clear
 echo -e " ───────────────────────────────────────────────────── " | lolcat
-echo -e " \e[1;97;41m                  Ghafoor Ali VPN-STORE            \033[0m"
+echo -e " \e[1;97;41m                  ILYASS  VPN-STORE            \033[0m"
 echo -e " ─────────────────────────────────────────────────────" | lolcat
 echo -e " $w 🔰 $NC${r} SYSTEM OS    \033[1;93m =$NC "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`	
 echo -e " $w 🔰 $NC${r} IP VPS       \033[1;93m =$NC $(cat /root/.myip)"
