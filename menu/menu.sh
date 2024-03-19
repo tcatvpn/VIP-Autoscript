@@ -1,7 +1,7 @@
  #!/bin/bash
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/ghafoorali176/permission/main/ipmini > /root/tmp
+    curl -sS https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/ipmini > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -19,7 +19,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/ghafoorali176/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/ipmini | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -36,7 +36,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/ghafoorali176/permission/main/ipmini | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/ipmini | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -54,7 +54,7 @@ PERMISSION
 if [ "$res" = "Expired" ]; then
 Exp="\e[36mExpired\033[0m"
 else
-Exp=$(curl -sS https://raw.githubusercontent.com/ghafoorali176/permission/main/ipmini | grep $MYIP | awk '{print $3}')
+Exp=$(curl -sS https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/ipmini | grep $MYIP | awk '{print $3}')
 fi
 
 # =========================================
@@ -249,14 +249,14 @@ echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
-export sem=$( curl -s https://raw.githubusercontent.com/ghafoorali176/virus/main/versions)
+export sem=$( curl -s https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/versions)
 export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
 figlet 'VPN - STORE'
 figlet 'Ghafoor Ali'
 echo -e "${BIPurple} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BIPurple} │                  ${BIWhite}${UWhite}Ghafoor Ali VPN-STORE${NC}"
+echo -e "${BIPurple} │                  ${BIWhite}${UWhite}ILYASS  VPN-STORE${NC}"
 echo -e "${BIPurple} │"
 echo -e "${BIPurple} │  ${BIPurple}OS        :  ${BIYellow}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )${NC}"
 echo -e "${BIPurple} │  ${BIPurple}CPU       :  ${BIYellow}$cpu_usage${NC}"
