@@ -2,7 +2,7 @@
 # Welcome Information
 # Edition : Stable Edition V1.0
 # Author  : LORD
-# (C) Copyright 2021-2022 By Ghafoor Ali
+# (C) Copyright 2021-2022 By Ilyass Najhi
 # =========================================
 
 # // Exporting Language to UTF-8
@@ -133,7 +133,7 @@ clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo -e "                ${YELLOW}(${NC}${GREEN} STATUS SERVICE INFORMATION ${NC}${YELLOW})${NC}"
 echo -e "         OWNER : ${GREEN} BTR ${NC}${YELLOW}(${NC} ${GREEN} LORD  ${NC}${YELLOW})${NC}"
-echo -e "       © Copyright By MAZ FARUK ${YELLOW}(${NC} 2023-2024 ${YELLOW})${NC}"
+echo -e "       © Copyright By ILYASS NAJHI${YELLOW}(${NC} 2023-2024 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 echo -e "${RED_BG}                     Sytem Information                    ${NC}"
