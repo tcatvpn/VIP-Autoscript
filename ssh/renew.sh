@@ -1,12 +1,12 @@
 #!/bin/bash
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # System Request : Debian 9+/Ubuntu 18.04+/20+
-# Develovers » Gemilangkinasih࿐
-# Email      » gemilangkinasih@gmail.com
-# telegram   » https://t.me/gemilangkinasih
-# whatsapp   » wa.me/+628984880039
+# Develovers » 𓆩 𝐈𝐋𝐘𝐀𝐒𝐒 𓆪
+# Email      » ilyassnajhi10@gmail.com
+# telegram   » https://t.me/IlyassExE
+# whatsapp   » wa.me/+447886100711
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# Gemilangkinasih࿐
+# 𓆩 𝐈𝐋𝐘𝐀𝐒𝐒 𓆪
 
 # Color
 RED="\033[31m"
