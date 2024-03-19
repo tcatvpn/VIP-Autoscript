@@ -1,11 +1,11 @@
 ## UPGRADE FOR DEBIAN AND UBUNTU
-Masukkan perintah dibawah jika anda menggunakan OS Debian Version 10 atau OS Ubuntu Version 20
+Enter the command below if you are using OS Debian Version 10 or OS Ubuntu Version 20
 ```
 apt update && apt upgrade -y --fix-missing && update-grub && sleep 2 && apt -y install xxd && apt install -y bzip2 && apt install -y wget && apt install -y curl && reboot
 ```
 
 ## INSTALL SCRIPT 
-Masukkan perintah dibawah untuk menginstall Autoscript Premium by Gemilangkinasih࿐
+Enter the command below to install Autoscript Premium by 𓆩 𝐈𝐋𝐘𝐀𝐒𝐒 𓆪
 ```
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
 ```
@@ -15,7 +15,7 @@ Gemilang Kinasih :
 <br><br><a href="https://wa.me/+447886100711" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Whatsapp&label=Whatsapp&message=Click%20Here&color=#006400">
 
 ## UPDATE SCRIPT
-Masukkan perintah dibawah jika terdapat informasi pembaruan Script untuk versi yang akan datang
+Enter the command below if there is Script update information for a future version
 ```
 wget https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/update.sh && chmod +x update.sh && ./update.sh
 ```
@@ -68,4 +68,4 @@ wget https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/update.sh &
 - UNDER ATTACK MODE : OFF
 ```
 
-Hubungi Admin Melalui Whatsaap, Kirim `IP VPS` Dan `Lakukan Proses Pembayaran!`. Setelah Berhasil IP Akan Diinputkan Oleh - Admin 𓆩 𝐈𝐋𝐘𝐀𝐒𝐒 𓆪
+Contact Admin via Whatsapp, send `VPS IP` and `Carry out the payment process!`. After Success, IP Will Be Entered By - Admin 𓆩 𝐈𝐋𝐘𝐀𝐒𝐒 𓆪
