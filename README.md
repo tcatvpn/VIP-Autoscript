@@ -11,7 +11,7 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 ```
 
 ## `IZIN IP AUTOSCRIPT KHUSUS MEMBER VIP !`
-Gemilang Kinasih :
+Ilyass Najhi :
 <br><br><a href="https://wa.me/+447886100711" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Whatsapp&label=Whatsapp&message=Click%20Here&color=#006400">
 
 ## UPDATE SCRIPT
