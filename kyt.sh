@@ -16,13 +16,13 @@ rm -rf bot
 apt update && apt upgrade
 apt install python3 python3-pip git
 cd /usr/bin
-wget https://raw.githubusercontent.com/ghafoorali/virus/main/limit/bot.zip
+wget https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/limit/bot.zip
 unzip bot.zip
 mv bot/* /usr/bin
 chmod +x /usr/bin/*
 rm -rf bot.zip
 clear
-wget https://raw.githubusercontent.com/ghafoorali/virus/main/limit/kyt.zip
+wget https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/limit/kyt.zip
 unzip kyt.zip
 pip3 install -r kyt/requirements.txt
 clear
