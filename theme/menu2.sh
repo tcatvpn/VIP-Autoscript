@@ -1,6 +1,6 @@
 #!/bin/bash
 BURIQ () {
-curl -sS https://raw.githubusercontent.com/FasterExE/autoscript-vvip/main/register > /root/tmp
+curl -sS https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/register > /root/tmp
 data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
 for user in "${data[@]}"
 do
@@ -17,7 +17,7 @@ done
 rm -f /root/tmp
 }
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/FasterExE/autoscript-vvip/main/register | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/register | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 Bloman () {
@@ -32,7 +32,7 @@ fi
 }
 PERMISSION () {
 MYIP=$(curl -sS ipv4.icanhazip.com)
-IZIN=$(curl -sS https://raw.githubusercontent.com/FasterExE/autoscript-vvip/main/register | awk '{print $4}' | grep $MYIP)
+IZIN=$(curl -sS https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/register | awk '{print $4}' | grep $MYIP)
 if [ "$MYIP" = "$IZIN" ]; then
 Bloman
 else
@@ -49,7 +49,7 @@ PERMISSION
 if [ "$res" = "Expired" ]; then
 Exp="\e[36mExpired\033[0m"
 else
-Exp=$(curl -sS https://raw.githubusercontent.com/FasterExE/autoscript-vvip/main/register | grep $MYIP | awk '{print $3}')
+Exp=$(curl -sS https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/register | grep $MYIP | awk '{print $3}')
 fi
 vlx=$(grep -c -E "^#& " "/etc/xray/config.json")
 let vla=$vlx/2
@@ -230,7 +230,7 @@ IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "$(figlet " GemilangVIP")" | lolcat
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BICyan} │                  ${BIWhite}${UWhite}GEMILANG-KINASIH${NC}"
+echo -e "${BICyan} │                  ${BIWhite}${UWhite}ILYASS-NAJHI${NC}"
 echo -e "${BICyan} │"
 echo -e "${BICyan} │  ${BICyan}OS        :  ${BIYellow}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )${NC}"
 echo -e "${BICyan} │  ${BICyan}CPU       :  ${BIYellow}$cpu_usage${NC}"
