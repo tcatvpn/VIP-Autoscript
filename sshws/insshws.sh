@@ -1,19 +1,19 @@
 #!/bin/bash
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # System Request : Debian 9+/Ubuntu 18.04+/20+
-# Develovers » Gemilangkinasih࿐
-# Email      » gemilangkinasih@gmail.com
-# telegram   » https://t.me/gemilangkinasih
-# whatsapp   » wa.me/+628984880039
+# Develovers » 𓆩 𝐈𝐋𝐘𝐀𝐒𝐒 𓆪
+# Email      » ilyassnajhi10@gmail.com
+# telegram   » https://t.me/IlyassExE
+# whatsapp   » wa.me/+447886100711
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# Gemilangkinasih࿐
+# 𓆩 𝐈𝐋𝐘𝐀𝐒𝐒 𓆪
 
 cd
 
 #Install Script Websocket-SSH Python
-#wget -O /usr/local/bin/ws-openssh https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/sshws/openssh-socket.py
-wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/sshws/dropbear-ws.py
-wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/sshws/ws-stunnel
+#wget -O /usr/local/bin/ws-openssh https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/sshws/openssh-socket.py
+wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/sshws/dropbear-ws.py
+wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/sshws/ws-stunnel
 wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/Tarap-Kuhing/tarong/main/tarong/OPENVPN/ws-ovpn
 
 #izin permision
@@ -24,13 +24,13 @@ chmod +x /usr/local/bin/ws-ovpn
 
 
 #System OpenSSH Websocket-SSH Python
-#wget -O /etc/systemd/system/ws-openssh.service https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/sshws/service-wsopenssh && chmod +x /etc/systemd/system/ws-openssh.service
+#wget -O /etc/systemd/system/ws-openssh.service https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/sshws/service-wsopenssh && chmod +x /etc/systemd/system/ws-openssh.service
 
 #System Dropbear Websocket-SSH Python
-wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/sshws/service-wsdropbear && chmod +x /etc/systemd/system/ws-dropbear.service
+wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/sshws/service-wsdropbear && chmod +x /etc/systemd/system/ws-dropbear.service
 
 #System SSL/TLS Websocket-SSH Python
-wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/sshws/ws-stunnel.service && chmod +x /etc/systemd/system/ws-stunnel.service
+wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/FasterExE/VIP-Autoscript/main/sshws/ws-stunnel.service && chmod +x /etc/systemd/system/ws-stunnel.service
 
 ##System Websocket-OpenVPN Python
 wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/Tarap-Kuhing/tarong/main/tarong/OPENVPN/ws-ovpn.service && chmod +x /etc/systemd/system/ws-ovpn.service
