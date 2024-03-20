@@ -166,7 +166,7 @@ echo -e "     ${g}3. ${w}MENU VLESS        ${g}8. ${w}ADD BOT TELEGRAM"
 echo -e "     ${g}4. ${w}MENU TROJAN       ${g}9. ${w}CHANGE BANNER SSH"
 echo -e "     ${g}5. ${w}MENU SYSTEM       ${g}x. ${w}EXIT PANEL SCRIPT"
 echo -e " ───────────────────────────────────────────────────── " | lolcat
-echo -e " \e[1;97;41m                  Ghafoor Ali VPN-STORE           \033[0m"
+echo -e " \e[1;97;41m                  ILYASS  VPN-STORE           \033[0m"
 echo -e " ───────────────────────────────────────────────────── " | lolcat
 echo -e "  ${r}Script Version \E[0m\033[1;93m=$NC V1.0"
 echo -e "  ${r}Client Name    \E[0m\033[1;93m=$NC $name"
