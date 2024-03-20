@@ -7,10 +7,10 @@ clear
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 DOMAIN=zvx.my.id
-SUB_DOMAIN=pro-${sub}.zvx.my.id
-NS_DOMAIN=dns-${subsl}.zvx.my.id
-CF_ID=mezzqueen293@gmail.com
-CF_KEY=e03f30d53ad7ec2ab54327baa5e2da5ab44f0
+SUB_DOMAIN=pro-${sub}.vip.ilyass.online
+NS_DOMAIN=dns-${subsl}.vip.ilyass.online
+CF_ID=ilyassnajhi10@gmail.com
+CF_KEY=c802b86ce41793d4aed457ad769889b7e31e9
 set -euo pipefail
 IP=$(curl -sS ifconfig.me);
 echo "Updating DNS for ${SUB_DOMAIN}..."
