@@ -1,27 +1,6 @@
-#!/bin/bash
-MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
+# Encrypted by K-fuscator
+# Github- https://github.com/KasRoudra/k-fuscator
 
-clear 
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[40;1;37m        • DOMAIN MENU •            \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "" 
-echo -e " [\e[36m•1\e[0m] CHANGE DOMAIN VPS"
-echo -e " [\e[36m•2\e[0m] Renew Certificate DOMAIN"
-echo -e ""
-echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
-echo -e   ""
-echo -e   "Press x or [ Ctrl+C ] • To-Exit"
-echo -e   ""
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e ""
-read -p " Select menu : " opt
-echo -e ""
-case $opt in
-1) clear ; add-host ;;
-2) clear ; certv2ray ;;
-0) clear ; menu ;;
-x) exit ;;
-*) echo "You pressed it wrong" ; sleep 1 ; menu-domain ;;
-esac
+z="
+";Ez=' ipi';sz='] Re';qBz=' ; m';CBz='] \e';xz='DOMA';tz='new ';Zz='    ';bBz='case';Uz='33[0';cBz=' $op';FCz='enu-';BCz='wron';Tz='━━\0';Cz='get ';JCz='esac';vz='ific';MBz=' x o';iBz='ost ';Mz='PS"';EBz='BACK';GCz='doma';Qz='"\e[';uz='Cert';iz='" [\';dz='U • ';OBz='Ctrl';RBz='o-Ex';HCz='in ;';jz='e[36';pz='AIN ';KBz='  "P';FBz=' TO ';mz='] CH';yz='IN"';Vz='m"';ABz='e[31';Rz='33m━';mBz='ertv';ACz=' it ';aBz='t';dBz='t in';Jz=' "Ch';rBz='enu ';Wz='"\E[';Az='MYIP';DCz=' sle';ZBz='" op';oBz=' ;;';hz='""';Hz='p);';az='• DO';JBz='  ""';tBz='xit ';qz='VPS"';Nz='clea';Dz='-qO-';Yz=';37m';TBz='read';Xz='40;1';fz='E[0m';VBz='" Se';hBz='dd-h';cz=' MEN';ECz='ep 1';Lz='ng V';xBz=' pre';Iz='echo';BBz='m•0\';lBz=' ; c';Fz='nfo.';ez='   \';YBz='u : ';nz='ANGE';gz='"';uBz='*) e';wBz='"You';WBz='lect';XBz=' men';kBz='2) c';IBz='[0m"';Pz=' -e ';gBz=' ; a';ICz=';';DBz='[31m';Sz='━━━━';LBz='ress';nBz='2ray';HBz='\033';jBz=';;';UBz=' -p ';oz=' DOM';lz='e[0m';SBz='it"';rz='m•2\';NBz='r [ ';PBz='+C ]';CCz='g" ;';fBz='lear';eBz='1) c';Kz='ecki';Gz='io/i';GBz='MENU';sBz='x) e';pBz='0) c';bz='MAIN';wz='ate ';Bz='=$(w';QBz=' • T';vBz='cho ';kz='m•1\';yBz='ssed';Oz='r';
+eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$Hz$z$Iz$Jz$Kz$Lz$Mz$z$Nz$Oz$z$Iz$Pz$Qz$Rz$Sz$Sz$Sz$Sz$Sz$Sz$Sz$Sz$Tz$Uz$Vz$z$Iz$Pz$Wz$Xz$Yz$Zz$Zz$az$bz$cz$dz$Zz$Zz$ez$fz$gz$z$Iz$Pz$Qz$Rz$Sz$Sz$Sz$Sz$Sz$Sz$Sz$Sz$Tz$Uz$Vz$z$Iz$Pz$hz$z$Iz$Pz$iz$jz$kz$lz$mz$nz$oz$pz$qz$z$Iz$Pz$iz$jz$rz$lz$sz$tz$uz$vz$wz$xz$yz$z$Iz$Pz$hz$z$Iz$Pz$iz$ABz$BBz$lz$CBz$DBz$EBz$FBz$GBz$HBz$IBz$z$Iz$Pz$JBz$z$Iz$Pz$KBz$LBz$MBz$NBz$OBz$PBz$QBz$RBz$SBz$z$Iz$Pz$JBz$z$Iz$Pz$Qz$Rz$Sz$Sz$Sz$Sz$Sz$Sz$Sz$Sz$Tz$Uz$Vz$z$Iz$Pz$hz$z$TBz$UBz$VBz$WBz$XBz$YBz$ZBz$aBz$z$Iz$Pz$hz$z$bBz$cBz$dBz$z$eBz$fBz$gBz$hBz$iBz$jBz$z$kBz$fBz$lBz$mBz$nBz$oBz$z$pBz$fBz$qBz$rBz$jBz$z$sBz$tBz$jBz$z$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$qBz$FCz$GCz$HCz$ICz$z$JCz"
