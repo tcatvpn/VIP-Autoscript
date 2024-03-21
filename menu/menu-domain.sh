@@ -1,5 +1,5 @@
-# Encrypted by K-fuscator
-# Github- https://github.com/KasRoudra/k-fuscator
+# Encrypted by 𓆩 𝐈𝐋𝐘𝐀𝐒𝐒 𓆪
+# Github- https://github.com/FasterExE
 
 z="
 ";Ez=' ipi';sz='] Re';qBz=' ; m';CBz='] \e';xz='DOMA';tz='new ';Zz='    ';bBz='case';Uz='33[0';cBz=' $op';FCz='enu-';BCz='wron';Tz='━━\0';Cz='get ';JCz='esac';vz='ific';MBz=' x o';iBz='ost ';Mz='PS"';EBz='BACK';GCz='doma';Qz='"\e[';uz='Cert';iz='" [\';dz='U • ';OBz='Ctrl';RBz='o-Ex';HCz='in ;';jz='e[36';pz='AIN ';KBz='  "P';FBz=' TO ';mz='] CH';yz='IN"';Vz='m"';ABz='e[31';Rz='33m━';mBz='ertv';ACz=' it ';aBz='t';dBz='t in';Jz=' "Ch';rBz='enu ';Wz='"\E[';Az='MYIP';DCz=' sle';ZBz='" op';oBz=' ;;';hz='""';Hz='p);';az='• DO';JBz='  ""';tBz='xit ';qz='VPS"';Nz='clea';Dz='-qO-';Yz=';37m';TBz='read';Xz='40;1';fz='E[0m';VBz='" Se';hBz='dd-h';cz=' MEN';ECz='ep 1';Lz='ng V';xBz=' pre';Iz='echo';BBz='m•0\';lBz=' ; c';Fz='nfo.';ez='   \';YBz='u : ';nz='ANGE';gz='"';uBz='*) e';wBz='"You';WBz='lect';XBz=' men';kBz='2) c';IBz='[0m"';Pz=' -e ';gBz=' ; a';ICz=';';DBz='[31m';Sz='━━━━';LBz='ress';nBz='2ray';HBz='\033';jBz=';;';UBz=' -p ';oz=' DOM';lz='e[0m';SBz='it"';rz='m•2\';NBz='r [ ';PBz='+C ]';CCz='g" ;';fBz='lear';eBz='1) c';Kz='ecki';Gz='io/i';GBz='MENU';sBz='x) e';pBz='0) c';bz='MAIN';wz='ate ';Bz='=$(w';QBz=' • T';vBz='cho ';kz='m•1\';yBz='ssed';Oz='r';
