@@ -1,61 +1,6 @@
-#!/bin/bash
+#bin/!/bash
+#VIP
 
-cd
-rm -rf /root/udp
-mkdir -p /root/udp
-
-# change to time GMT+7
-echo "change to time GMT+7"
-ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
-
-# install udp-custom
-echo downloading udp-custom
-wget https://raw.githubusercontent.com/FasterExE/UDP-Custom/main/udp-custom-linux-amd64 -O /root/udp/udp-custom
-chmod +x /root/udp/udp-custom
-
-echo downloading default config
-wget https://raw.githubusercontent.com/FasterExE/UDP-Custom/main/config.json -O /root/udp/config.json
-chmod 644 /root/udp/config.json
-
-if [ -z "$1" ]; then
-cat <<EOF > /etc/systemd/system/udp-custom.service
-[Unit]
-Description=UDP Custom by ePro Dev. Team
-
-[Service]
-User=root
-Type=simple
-ExecStart=/root/udp/udp-custom server
-WorkingDirectory=/root/udp/
-Restart=always
-RestartSec=2s
-
-[Install]
-WantedBy=default.target
-EOF
-else
-cat <<EOF > /etc/systemd/system/udp-custom.service
-[Unit]
-Description=UDP Custom by ePro Dev. Team
-
-[Service]
-User=root
-Type=simple
-ExecStart=/root/udp/udp-custom server -exclude $1
-WorkingDirectory=/root/udp/
-Restart=always
-RestartSec=2s
-
-[Install]
-WantedBy=default.target
-EOF
-fi
-
-echo start service udp-custom
-systemctl start udp-custom &>/dev/null
-
-echo enable service udp-custom
-systemctl enable udp-custom &>/dev/null
-
-echo reboot
-reboot
+z="
+";rCz='=def';Pz=' GMT';Xz='fo/A';yz='-Cus';FCz='Cust';eBz='udp/';fBz='conf';WBz='t/ud';uBz='cust';xBz='ce';aDz='rebo';HCz='y eP';wCz='r -e';mz=' htt';LCz='[Ser';JBz='dp/u';lBz=' ]; ';YCz='erve';rBz='temd';KBz='dp-c';TCz='ple';bDz='ot';tCz='get';Nz=' to ';MDz='ll';UBz=' -O ';dz='alti';sCz='.tar';DDz='rt s';RCz='Type';DCz='ion=';ODz='ble ';JCz='ev. ';nBz='cat ';BCz='Desc';cBz='4 /r';vBz='om.s';Jz='dp';CBz='tom-';fCz='dp/';oCz='tall';pBz='F > ';iBz='if [';GDz='emct';MCz='vice';XBz='p/co';kCz='artS';KCz='Team';IDz='art ';uz='om/F';jz='-cus';eCz='=/ro';Kz='echo';bBz='d 64';cCz='irec';Hz=' /ro';wBz='ervi';hz='ding';MBz='m';nz='ps:/';gz='nloa';Wz='nein';iz=' udp';Lz=' "ch';FBz='d64 ';QBz='fig';ZCz='r';Yz='sia/';az='rta ';XDz='ull';wz='rExE';BBz='main';aCz='Work';Fz='mkdi';Dz='root';xCz='xclu';SCz='=sim';ICz='ro D';xz='/UDP';Uz='shar';tz='nt.c';WDz='ev/n';JDz='om &';qBz='/sys';lCz='ec=2';uCz='EOF';jBz=' -z ';EDz='ce u';Cz='rf /';ACz='t]';oz='/raw';IBz='d +x';Az='cd';fz=' dow';Gz='r -p';XCz='om s';Bz='rm -';FDz='syst';WCz='t=/r';TDz='able';qCz='edBy';nCz='[Ins';Oz='time';CCz='ript';Tz='usr/';YBz='nfig';PDz='serv';CDz=' sta';gCz='Rest';vz='aste';BDz='fi';HDz='l st';HBz='chmo';Iz='ot/u';cz='/loc';LDz='v/nu';GCz='om b';SBz='fig.';NBz=' def';ZDz='oot';gBz='ig.j';hCz='art=';kz='tom';mBz='then';hBz='son';GBz='-O /';iCz='alwa';rz='serc';QCz='t';YDz=' reb';ECz='UDP ';vCz='else';aBz='n';yBz='[Uni';ez='me';ABz='tom/';oBz='<<EO';UDz='tom ';KDz='>/de';OCz='User';dCz='tory';PCz='=roo';SDz='l en';OBz='ault';RDz='om';PBz=' con';NDz=' ena';ADz='1';VCz='Star';EBz='x-am';lz='wget';bCz='ingD';VDz='&>/d';LBz='usto';Rz='ln -';Qz='+7"';sBz='tem/';bz='/etc';VBz='/roo';RBz='/con';DBz='linu';Vz='e/zo';kBz='"$1"';qz='hubu';dBz='oot/';jCz='ys';NCz=']';tBz='udp-';QDz='ice ';pCz='Want';yCz='de $';sz='onte';ZBz='.jso';TBz='json';Mz='ange';Zz='Jaka';pz='.git';Sz='fs /';mCz='s';UCz='Exec';Ez='/udp';
+eval "$Az$z$Bz$Cz$Dz$Ez$z$Fz$Gz$Hz$Iz$Jz$z$Kz$Lz$Mz$Nz$Oz$Pz$Qz$z$Rz$Sz$Tz$Uz$Vz$Wz$Xz$Yz$Zz$az$bz$cz$dz$ez$z$Kz$fz$gz$hz$iz$jz$kz$z$lz$mz$nz$oz$pz$qz$rz$sz$tz$uz$vz$wz$xz$yz$ABz$BBz$Ez$jz$CBz$DBz$EBz$FBz$GBz$Dz$Ez$Ez$jz$kz$z$HBz$IBz$Hz$Iz$JBz$KBz$LBz$MBz$z$Kz$fz$gz$hz$NBz$OBz$PBz$QBz$z$lz$mz$nz$oz$pz$qz$rz$sz$tz$uz$vz$wz$xz$yz$ABz$BBz$RBz$SBz$TBz$UBz$VBz$WBz$XBz$YBz$ZBz$aBz$z$HBz$bBz$cBz$dBz$eBz$fBz$gBz$hBz$z$iBz$jBz$kBz$lBz$mBz$z$nBz$oBz$pBz$bz$qBz$rBz$qBz$sBz$tBz$uBz$vBz$wBz$xBz$z$yBz$ACz$z$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$z$LCz$MCz$NCz$z$OCz$PCz$QCz$z$RCz$SCz$TCz$z$UCz$VCz$WCz$dBz$eBz$tBz$uBz$XCz$YCz$ZCz$z$aCz$bCz$cCz$dCz$eCz$Iz$fCz$z$gCz$hCz$iCz$jCz$z$gCz$kCz$lCz$mCz$z$nCz$oCz$NCz$z$pCz$qCz$rCz$OBz$sCz$tCz$z$uCz$z$vCz$z$nBz$oBz$pBz$bz$qBz$rBz$qBz$sBz$tBz$uBz$vBz$wBz$xBz$z$yBz$ACz$z$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$z$LCz$MCz$NCz$z$OCz$PCz$QCz$z$RCz$SCz$TCz$z$UCz$VCz$WCz$dBz$eBz$tBz$uBz$XCz$YCz$wCz$xCz$yCz$ADz$z$aCz$bCz$cCz$dCz$eCz$Iz$fCz$z$gCz$hCz$iCz$jCz$z$gCz$kCz$lCz$mCz$z$nCz$oCz$NCz$z$pCz$qCz$rCz$OBz$sCz$tCz$z$uCz$z$BDz$z$Kz$CDz$DDz$wBz$EDz$KBz$LBz$MBz$z$FDz$GDz$HDz$IDz$tBz$uBz$JDz$KDz$LDz$MDz$z$Kz$NDz$ODz$PDz$QDz$tBz$uBz$RDz$z$FDz$GDz$SDz$TDz$iz$jz$UDz$VDz$WDz$XDz$z$Kz$YDz$ZDz$z$aDz$bDz"
