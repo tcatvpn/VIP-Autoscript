@@ -10,7 +10,7 @@ DOMAIN=ilyass.my.id
 SUB_DOMAIN=pro-${sub}.ilyass.my.id
 NS_DOMAIN=dns-${subsl}.ilyass.my.id
 CF_ID=ilyassnajhi10@gmail.com
-CF_KEY=gOrPw7xEFVojNATUrto4oOAYFK_RBNy3tY1uDpYZ
+CF_KEY=c802b86ce41793d4aed457ad769889b7e31e9
 set -euo pipefail
 IP=$(curl -sS ifconfig.me);
 echo "Updating DNS for ${SUB_DOMAIN}..."
