@@ -75,7 +75,7 @@ echo "Host FLARE: $FLARE_DOMAIN"
 echo "Host NS : $NS_DOMAIN"
 echo "IP=$WS_DOMAIN" > /var/lib/SIJA/ipvps.conf
 echo "$WS_DOMAIN" > /root/domain
-echo "$FLARE_DOMAIN" > /root/flare-domain
+echo "$FLARE_DOMAIN" > /root/xray/flare-domain
 echo "$NS_DOMAIN" > /root/nsdomain
 echo "$WS_DOMAIN" > /etc/xray/domain
 echo "$WS_DOMAIN" > /etc/v2ray/domain
