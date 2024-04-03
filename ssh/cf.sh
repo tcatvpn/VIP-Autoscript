@@ -71,7 +71,8 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
 -H "X-Auth-Key: ${CF_KEY}" \
 -H "Content-Type: application/json" \
 --data '{"type":"NS","name":"'${NS_DOMAIN}'","content":"'${WS_DOMAIN}'","ttl":120,"proxied":false}')
-echo "Host : $WS_DOMAIN"
+echo "Host WS : $WS_DOMAIN"
+echo "Host FLARE: $FLARE_DOMAIN"
 echo "Host NS : $NS_DOMAIN"
 echo "IP=$WS_DOMAIN" > /var/lib/SIJA/ipvps.conf
 echo "$WS_DOMAIN" > /root/domain
