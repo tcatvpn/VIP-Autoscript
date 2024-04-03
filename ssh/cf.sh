@@ -75,13 +75,14 @@ echo "Host : $WS_DOMAIN"
 echo "Host NS : $NS_DOMAIN"
 echo "IP=$WS_DOMAIN" > /var/lib/SIJA/ipvps.conf
 echo "$WS_DOMAIN" > /root/domain
-echo "$flare_DOMAIN" > /root/flare-domain
+echo "$FLARE_DOMAIN" > /root/flare-domain
 echo "$NS_DOMAIN" > /root/nsdomain
 echo "$WS_DOMAIN" > /etc/xray/domain
 echo "$WS_DOMAIN" > /etc/v2ray/domain
 echo "$WS_DOMAIN" > /root/scdomain
 echo "$WS_DOMAIN" > /root/xray/scdomain
 echo -e "Done Record Domain= $WS_DOMAIN"
+echo -e "Done Record Flare Domain= $FLARE_DOMAIN"
 echo -e "Done Record NSDomain= $NS_DOMAIN"
 rm -rf cf
 sleep 1
