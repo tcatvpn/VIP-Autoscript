@@ -2,6 +2,7 @@
 #random
 apt install jq curl -y
 rm -rf /root/xray/scdomain
+rm -rf /root/xray/flare-domain
 mkdir -p /root/xray
 clear
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
