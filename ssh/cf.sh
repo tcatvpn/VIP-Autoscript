@@ -23,20 +23,24 @@ RECORD=$(curl -sLX GET "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
 -H "X-Auth-Key: ${CF_KEY}" \
 -H "Content-Type: application/json" | jq -r .result[0].id)
 if [[ "${#RECORD}" -le 10 ]]; then
+#start-ws
 RECORD=$(curl -sLX POST "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records" \
 -H "X-Auth-Email: ${CF_ID}" \
 -H "X-Auth-Key: ${CF_KEY}" \
 -H "Content-Type: application/json" \
 --data '{"type":"A","name":"'${WS_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}' | jq -r .result.id)
 fi
-#new
+#end-ws
+
+#start-flare
 RECORD=$(curl -sLX POST "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records" \
 -H "X-Auth-Email: ${CF_ID}" \
 -H "X-Auth-Key: ${CF_KEY}" \
 -H "Content-Type: application/json" \
 --data '{"type":"CNAME","name":"'${FLARE_DOMAIN}'","content":"'${WS_DOMAIN}'","ttl":120,"proxied":false}' | jq -r .result.id)
 fi
-#new
+#end-flare
+
 RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records/${RECORD}" \
 -H "X-Auth-Email: ${CF_ID}" \
 -H "X-Auth-Key: ${CF_KEY}" \
@@ -52,12 +56,16 @@ RECORD=$(curl -sLX GET "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
 -H "X-Auth-Key: ${CF_KEY}" \
 -H "Content-Type: application/json" | jq -r .result[0].id)
 if [[ "${#RECORD}" -le 10 ]]; then
+
+#start-ns
 RECORD=$(curl -sLX POST "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records" \
 -H "X-Auth-Email: ${CF_ID}" \
 -H "X-Auth-Key: ${CF_KEY}" \
 -H "Content-Type: application/json" \
 --data '{"type":"NS","name":"'${NS_DOMAIN}'","content":"'${WS_DOMAIN}'","ttl":120,"proxied":false}' | jq -r .result.id)
 fi
+#end-ns
+
 RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records/${RECORD}" \
 -H "X-Auth-Email: ${CF_ID}" \
 -H "X-Auth-Key: ${CF_KEY}" \
@@ -67,6 +75,7 @@ echo "Host : $WS_DOMAIN"
 echo "Host NS : $NS_DOMAIN"
 echo "IP=$WS_DOMAIN" > /var/lib/SIJA/ipvps.conf
 echo "$WS_DOMAIN" > /root/domain
+echo "$flare_DOMAIN" > /root/flare-domain
 echo "$NS_DOMAIN" > /root/nsdomain
 echo "$WS_DOMAIN" > /etc/xray/domain
 echo "$WS_DOMAIN" > /etc/v2ray/domain
