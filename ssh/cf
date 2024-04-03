@@ -7,8 +7,8 @@ clear
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 DOMAIN=ilyass.my.id
-SUB_DOMAIN=pro-${sub}.ilyass.my.id
-NS_DOMAIN=dns-${subsl}.ilyass.my.id
+SUB_DOMAIN=ws-${sub}.ilyass.my.id
+NS_DOMAIN=ns-${subsl}.ilyass.my.id
 CF_ID=ilyassnajhi10@gmail.com
 CF_KEY=c802b86ce41793d4aed457ad769889b7e31e9
 set -euo pipefail
