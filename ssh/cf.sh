@@ -31,7 +31,7 @@ RECORD=$(curl -sLX POST "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_
 --data '{"type":"A","name":"'${WS_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}' | jq -r .result.id)
 fi
 #end-ws
-
+echo "Updating DNS FLARE for ${FLARE_DOMAIN}..."
 #start-flare
 RECORD=$(curl -sLX POST "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records" \
 -H "X-Auth-Email: ${CF_ID}" \
