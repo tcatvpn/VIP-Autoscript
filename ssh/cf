@@ -78,6 +78,7 @@ echo "$WS_DOMAIN" > /root/domain
 echo "$FLARE_DOMAIN" > /root/xray/flare-domain
 echo "$NS_DOMAIN" > /root/nsdomain
 echo "$WS_DOMAIN" > /etc/xray/domain
+echo "$FLARE_DOMAIN" > /etc/xray/flare-domain
 echo "$WS_DOMAIN" > /etc/v2ray/domain
 echo "$WS_DOMAIN" > /root/scdomain
 echo "$WS_DOMAIN" > /root/xray/scdomain
